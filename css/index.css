@@ -1,0 +1,259 @@
+/* Reseta o margin e padding de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define uma fonte padrão e um fundo para o corpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+/* Estiliza o container1 */
+.container1 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  height: 400px;
+}
+
+.texto1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(163, 85, 146, 0.5);
+  border-radius: 10px;
+}
+
+.texto1 h1 {
+  font-size: 2.5rem;
+}
+
+.texto1 p {
+  font-size: 1.2rem;
+}
+
+/* Estiliza as barras */
+.barra {
+  height: 10px;
+  background-color: rgba(45, 19, 40, 0.5);
+  margin: 20px 0;
+  padding: 40px;
+}
+
+/* Estiliza o container2 */
+.container2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.texto2 {
+  margin-bottom: 20px;
+}
+
+.texto2 h3 {
+  font-size: 2rem;
+}
+
+.texto2 p {
+  font-size: 1rem;
+}
+
+/* Estiliza as músicas e cartões */
+.musicas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card1, .card2 {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #bcb8b8;
+  padding: 16px;
+}
+
+.card1 img, .card2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info {
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+.info h4 {
+  color: #1E1E1E;
+  font-style: oblique;
+}
+.info p{
+  color: #615f5f;
+  font-style: normal;
+}
+
+/* Estiliza o container3 */
+.container3 {
+  padding: 20px;
+  text-align: center;
+}
+
+.container3 h2 {
+  font-size: 2rem;
+  font-style: oblique;
+}
+
+.container3 h3 {
+  font-size: 1.5rem;
+  color: #615f5f;
+}
+
+.container3 p {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.card3 img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estiliza o container5 */
+.container5 {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+  background-color: rgba(163, 85, 146, 0.5);
+  border-radius: 10px;
+  position: relative;
+  left: 10%;
+  color: #f5f5f5;
+}
+
+/* Estiliza o container6 */
+.container6 {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8x;
+  border: 1px solid #bcb8b8;
+  padding: 16px;
+}
+
+.container6 h2 {
+  font-size: 2rem;
+}
+
+.container6 p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.container6 button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container6 button:hover {
+  background-color: rgba(163, 85, 146, 0.5);
+}
+
+.container6 a {
+  text-decoration: none;
+}
+
+.img-gatinhos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .texto1 h1 {
+    font-size: 2rem;
+  }
+
+  .texto1 p {
+    font-size: 1rem;
+  }
+
+  .texto2 h3 {
+    font-size: 1.5rem;
+  }
+
+  .texto2 p {
+    font-size: 0.9rem;
+  }
+
+  .container3 h2 {
+    font-size: 1.5rem;
+  }
+
+  .container3 h3 {
+    font-size: 1.2rem;
+  }
+
+  .container3 p {
+    font-size: 0.9rem;
+  }
+
+  .card1, .card2 {
+    min-width: 150px;
+  }
+
+  .container6 button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .texto1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto1 p {
+    font-size: 0.9rem;
+  }
+
+  .texto2 h3 {
+    font-size: 1.2rem;
+  }
+
+  .texto2 p {
+    font-size: 0.8rem;
+  }
+
+  .container3 h2 {
+    font-size: 1.2rem;
+  }
+
+  .container3 h3 {
+    font-size: 1rem;
+  }
+
+  .container3 p {
+    font-size: 0.8rem;
+  }
+
+  .container6 button {
+    font-size: 0.8rem;
+  }
+}
